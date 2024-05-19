@@ -5,30 +5,65 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.img1{
-  width: 15%;
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.container1{
-  margin-top: 90px;
-  width: 1920px;
-  height: 200px;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#container1 {
+  width: 100%;
   background-color: #f4f6f8;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
+  animation: fadeInUp 1s ease;
 }
-.img1{
-  margin-right: 150px; 
+
+.img1 {
+  width: 15%;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease;
+  margin-right: 25px;
+}
+
+#container1 h1,
+#container1 h2 {
+  margin: 10px 0;
+  animation: fadeIn 1s ease; 
 }
 .container2{
   height: 1000px;
@@ -42,4 +77,62 @@ code {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  animation: fadeInUp 1s ease;
+}
+
+.navbar-container {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  animation: fadeInDown 1s;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  width: 26.3%; 
+}
+
+.navbar ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline; 
+  margin-right: 40px; 
+}
+
+.navbar ul li a {
+  color: #fff; 
+  text-decoration: none; 
+  font-size: 18px; 
+  transition: color 0.3s ease; 
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00; 
+}
+
+.izquierda{
+  margin-top: 90px;
+  width: 50%;
+  text-align: left;
+  display: block;
+  margin-right: 100px;
+  animation: fadeInUp 1s ease;
+}
+.img3{
+  margin-top: 80px;
+  width: 340px;
+  height: 400px;
+  border-radius: 20px;
+  animation: fadeInUp 1s ease;
 }
