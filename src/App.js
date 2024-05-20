@@ -4,6 +4,7 @@ import Inicio from './components/Inicio';
 import Navbar from './components/Navbar'
 import wave from './img/wave-bg.svg';
 import Conocimientos from './components/Conocimiento';
+import Contacto from './components/Contacto';
 function App(props) {
     window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar-container');
@@ -19,7 +20,9 @@ function App(props) {
       <Inicio/>
       <img src={wave} id='img2' alt="img2"/>
       <Mipersona/>
+      <p id="lugar">no estoy</p>
       <Conocimientos/>
+      <Contacto/>
     </div>
   );
 }

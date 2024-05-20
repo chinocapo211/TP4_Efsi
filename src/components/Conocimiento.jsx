@@ -7,19 +7,18 @@ function Conocimientos(){
             <h1>Conocimientos</h1>
             <div class="flex">
             <div class="hoverImg">
-                <img src={monitor} id="img4" alt='img4'/>
-                <p class="hoverTexto">Se programar en python, Javascript, SQL, C#, C++, HTML y CSS. Tengo un nivel avanzado de ingles con el examen CAE aprobado.</p>
+                <img src={monitor} class="hoverr" alt='img4'/>
+                <p class="hoverTexto">Se programar en python, Javascript, SQL, C# y C++. A parte puedo diseñar en HTML y CSS.</p>
             </div>
             <div class="hoverImg">
-                <img src={moneda} id="img5" alt='img5'/>
-                <p class="hoverTexto">a</p>
+                <img src={moneda} class="hoverr" alt='img5'/>
+                <p class="hoverTexto">Tengo conocimientos basicos sobre economia e inversiones que aprendi de manera independiente y con un curso hecho en la secundaria.</p>
             </div>
             <div class="hoverImg">
-                <img src={letras} id="img6" alt='img6'/>
-                <p class="hoverTexto">a</p>
+                <img src={letras} class="hoverr" alt='img6'/>
+                <p class="hoverTexto">Mi lengua nativa es el españo y t¿engo un nivel avanzado de ingles con el examen CAE aprobado.</p>
             </div>
             </div>
-            
         </div>   
     );
 }

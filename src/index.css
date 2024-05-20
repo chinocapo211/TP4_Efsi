@@ -145,7 +145,7 @@ code {
   animation: fadeInUp 1s ease;
 }
 #container3{
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 25%;
   width: 1000px;
   justify-content: center;
@@ -163,28 +163,63 @@ code {
   margin:0;
   padding: 0;
 }
-.hoverImg{
-  border: 5px solid #464646; 
-  border-radius: 15px;
-  height: 250px;
-  width: 250px;
-  margin-top: 45px;
-}
-.hoverImg img{
-  transition: opacity 0.3s ease;
-}
-.hoverTexto{
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
+
 .flex{
   display: flex;
   justify-content: space-between;
 }
-.hoverImg img:hover{
+.hoverr:hover{
   opacity: 0;
 }
-.hoverTexto:hover{
+.hoverr:hover .hoverTexto{
   opacity: 1;
 }
-/* En la trancicion cambiar el Y del texto*/
+.hoverImg {
+  border: 5px solid #464646;
+  border-radius: 15px;
+  height: 250px;
+  width: 250px;
+  margin-top: 45px;
+  position: relative;
+}
+
+.hoverImg img {
+  transition: opacity 0.3s ease;
+}
+
+.hoverTexto {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.hoverImg:hover img {
+  opacity: 0;
+}
+
+.hoverImg:hover .hoverTexto {
+  opacity: 1;
+}
+#lugar{
+  opacity: 0;
+}
+#container4{
+  width: 100%;
+  text-align: center;
+  margin-top: 250px;
+}
+#container4 img{
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  border-radius: 15px;
+}
+#conta{
+  border: 5px solid #464646;
+  border-radius: 15px;
+  width: 150px;
+}
