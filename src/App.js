@@ -3,6 +3,7 @@ import Mipersona from './components/Mipersona';
 import Inicio from './components/Inicio';
 import Navbar from './components/Navbar'
 import wave from './img/wave-bg.svg';
+import Conocimientos from './components/Conocimiento';
 function App(props) {
     window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar-container');
@@ -15,11 +16,10 @@ function App(props) {
   return (
     <div>
       <Navbar/>
-      
       <Inicio/>
       <img src={wave} class='img2' alt="img2"/>
       <Mipersona/>
-      
+      <Conocimientos/>
     </div>
   );
 }

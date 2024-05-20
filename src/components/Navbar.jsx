@@ -4,7 +4,7 @@ function Navbar() {
         <nav class='navbar'>
             <ul>
                 <li><a href="#container2">Acerca de</a></li>
-                <li><a href="#servicios">Conocimientos</a></li>
+                <li><a href="#img2">Conocimientos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
