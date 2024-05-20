@@ -17,7 +17,7 @@ function App(props) {
     <div>
       <Navbar/>
       <Inicio/>
-      <img src={wave} class='img2' alt="img2"/>
+      <img src={wave} id='img2' alt="img2"/>
       <Mipersona/>
       <Conocimientos/>
     </div>
