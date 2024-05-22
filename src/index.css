@@ -93,6 +93,7 @@ code {
   display: flex;
   justify-content: center;
   animation: fadeInDown 1s;
+  z-index: 1000;
 }
 
 .fixed {
@@ -103,6 +104,7 @@ code {
 .navbar {
   width: 100%; 
   text-align: center;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -146,8 +148,7 @@ code {
 }
 #container3{
   margin-top: 150px;
-  margin-left: 25%;
-  width: 1000px;
+  width: 100%;
   justify-content: center;
   text-align: center;
 }
@@ -163,10 +164,13 @@ code {
   margin:0;
   padding: 0;
 }
-
+#container3 h2{
+  margin: 0;
+  padding: 0;
+}
 .flex{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .hoverr:hover{
   opacity: 0;
@@ -177,7 +181,7 @@ code {
 .hoverImg {
   border: 5px solid #464646;
   border-radius: 15px;
-  height: 250px;
+  height: 300px;
   width: 250px;
   margin-top: 45px;
   position: relative;
@@ -207,19 +211,68 @@ code {
 #lugar{
   opacity: 0;
 }
-#container4{
-  width: 100%;
-  text-align: center;
-  margin-top: 250px;
-}
-#container4 img{
-  margin: 0;
-  padding: 0;
-  width: 150px;
-  border-radius: 15px;
-}
-#conta{
-  border: 5px solid #464646;
-  border-radius: 15px;
-  width: 150px;
-}
+  #container4 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    margin-top: 250px;
+  }
+  
+  .card-container {
+    display: inline-block;
+    perspective: 1000px; /* Establece la perspectiva para el efecto 3D */
+    margin-left: 20px;
+  }
+  
+  .card {
+    width: 150px;
+    height: 200px; /* Altura para contener tanto el frente como la parte trasera */
+    position: relative;
+    transform-style: preserve-3d; /* Mantener el efecto 3D en los elementos hijos */
+    transition: transform 0.5s; /* Transición suave para el giro */
+  }
+  
+  .card:hover {
+    transform: rotateY(180deg); /* Gira la tarjeta 180 grados en el eje Y al pasar el cursor */
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la parte trasera de la tarjeta al frente */
+  }
+  
+  .card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card img {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    border-radius: 15px; /* Ajusta el radio de las esquinas según tu necesidad */
+  }
+  
+  .card-back {
+    transform: rotateY(180deg); /* Gira la parte trasera 180 grados inicialmente para que esté oculta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-back h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #f4f6f8;
+    padding: 1px;
+    text-align: center;
+  }
